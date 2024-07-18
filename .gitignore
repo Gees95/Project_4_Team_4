@@ -1,0 +1,5 @@
+# Ignore the Downloaded Kaggle Zip File
+chest-xray-pneumonia.zip
+
+# Ignore the data folder
+data/
