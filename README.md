@@ -11,7 +11,7 @@ We used a [Kaggle dataset](https://www.kaggle.com/datasets/paultimothymooney/che
 # Model & data processing
 We built a Convoluted Neural Network(CNN) with 3 CNN layers and 2 Dense Layers.
 
-```
+```python
 def create_model(img_height, img_width, filter, seed_value, color_channels=1, dropout=0):
     model = models.Sequential([
         layers.Conv2D(32, (filter, filter), activation='relu',
