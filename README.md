@@ -89,8 +89,13 @@ FPR at this threshold: 0.49145299145299143
 ```
 
 ### Confusion Matrix
-To better understand the thresholds, we created multiple confusion matrices at different thresholds [0.3, 0.4, 0.5, 0.6, 0.7], which can be found in the [output folder](output) 
+To better understand the thresholds, we created multiple confusion matrices at different thresholds [ 0.3, 0.4, 0.5, 0.6, 0.7 ], which can be found in the [output folder](output). As we are interested in 95% sensitivity with a threshold of 0.3, we have shown the matrices adjacent to this for comparison.
 
+![Confusion Matrix 0.3 Threshold](output/confusion_matrix_0.3.png)
+
+![Confusion Matrix 0.4 Threshold](output/confusion_matrix_0.4.png)
+
+![Confusion Matrix 0.5 Threshold](output/confusion_matrix_0.5.png)
 
 
 
