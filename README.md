@@ -105,6 +105,10 @@ We tested the model on two pediatric images obtained from Radiopedia.org, one wi
 The results are shown below
 
 ### Normal Xray
-![Normal Xray Prediction]
+![Normal Xray Prediction](output/test_predict_normal.png)
+
+### Pneumonia Xray
+![Pneumonia Xray Prediction](output/test_predict_penumonia.png)
+
 
 
