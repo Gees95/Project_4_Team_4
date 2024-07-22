@@ -6,7 +6,9 @@ This project builds a Supervised ML Image Classifier to detect pneumonia in paed
 
 # Dataset
 
-We used a [Kaggle dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data), which had 5,863 xray images which we used to train and test our model.
+We used a [Kaggle dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data), which had 5,863 X-ray images, to train and test our model. The image below shows the breakdown of the images by group (train, test, validation) and label (normal, pneumonia). As seen, there is an imbalance in the dataset. There are disproportionately more pneumonia images than normal.
+
+![Breakdown of dataset](output/dataset breakdown.png)
 
 # Model & data processing
 We built a Convoluted Neural Network(CNN) with 3 CNN layers and 2 Dense Layers.
@@ -112,10 +114,12 @@ The model successfully predicted the normal and pneumonia images, with the thres
 
 Conclusion & Limitations
 
-This model shows promising results, but further work will be required to further refine the model. 
+This model shows promising results, but further work will be required to refine the model for clinical use. 
 
 We tried multiple iterations (165 models evaluated), and further hyperparameter changes to the model and preprocessing can potentially improve the model. However, we were limited by the computing power of local machines. Consideration could be given to cloud computing for greater computing power, but information governance and security must be assured when holding healthcare data in the cloud.
 
 As mentioned earlier, we had difficulty reproducing the results despite using a seed for the model, and getting more expert help in image classification can help resolve this.
 
-Exploration can be done by adjusting other parameters such as image brightness and removal of artefacts and labels from the images (e.g., removing the right label from images). Augmenting the image data with additional information such as age and sex may improve the model's ability to learn age and specific changes. 
+Exploration can be done by adjusting other parameters such as image brightness and removal of artefacts and labels from the images (e.g., removing the right label from images). Augmenting the image data with additional information such as age and sex may improve the model's ability to learn age and specific changes.
+
+The dataset is imbalanced, with more pneumonia images than normal images. Increasing the dataset to include more normal X-rays can help improve the model's ability to predict normal X-rays better. We could also use cross-validation to improve the model's training.
