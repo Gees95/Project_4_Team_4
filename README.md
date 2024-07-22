@@ -100,11 +100,22 @@ To better understand the thresholds, we created multiple confusion matrices at d
 As the threshold increases, the false negative rate for the model increases. This means more X-rays are predicted to be normal when pneumonia is present. We would like to keep this number small. The trade-off for reducing the number of false negatives is a rise in the false positives, which means there would be more normal X-rays predicted as pneumonia. This increased flagging of false positives will increase the workload to clinicians and reduce clinicians' trust in the model.
 
 # Web Test
-We tested the model on two pediatric images obtained from Radiopedia.org, one with [pneumonia](https://radiopaedia.org/cases/right-middle-lobe-pneumonia-child?lang=gb) and the other a [normal](https://radiopaedia.org/cases/normal-chest-child) Xray.
-
-The results are shown below
+We tested the model on two pediatric images obtained from Radiopedia.org, one with [pneumonia](https://radiopaedia.org/cases/right-middle-lobe-pneumonia-child?lang=gb) and the other a [normal](https://radiopaedia.org/cases/normal-chest-child) Xray. The results are shown below.
 
 ### Normal Xray
-![Normal Xray Prediction]
+![Normal Xray Prediction](output/test_predict_normal.png)
 
+### Pneumonia Xray
+![Pneumonia Xray Prediction](output/test_predict_penumonia.png)
 
+The model successfully predicted the normal and pneumonia images, with the threshold at 0.4 (95% sensitivity). However, on closer inspection, the prediction score for pneumonia was 0.449, which is just marginally above the threshold.
+
+Conclusion & Limitations
+
+This model shows promising results, but further work will be required to further refine the model. 
+
+We tried multiple iterations (165 models evaluated), and further hyperparameter changes to the model and preprocessing can potentially improve the model. However, we were limited by the computing power of local machines. Consideration could be given to cloud computing for greater computing power, but information governance and security must be assured when holding healthcare data in the cloud.
+
+As mentioned earlier, we had difficulty reproducing the results despite using a seed for the model, and getting more expert help in image classification can help resolve this.
+
+Exploration can be done by adjusting other parameters such as image brightness and removal of artefacts and labels from the images (e.g., removing the right label from images). Augmenting the image data with additional information such as age and sex may improve the model's ability to learn age and specific changes. 
