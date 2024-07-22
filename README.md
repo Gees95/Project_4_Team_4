@@ -125,4 +125,4 @@ Exploration can be done by adjusting other parameters such as image brightness a
 
 The dataset is imbalanced, with more pneumonia images than normal images. Increasing the dataset to include more normal X-rays can help improve the model's ability to predict normal X-rays better. We could also use cross-validation to improve the model's training.
 
-_~ End ~_ 
+*~ End ~* 
