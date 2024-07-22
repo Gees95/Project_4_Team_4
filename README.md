@@ -124,3 +124,5 @@ As mentioned earlier, we had difficulty reproducing the results despite using a 
 Exploration can be done by adjusting other parameters such as image brightness and removal of artefacts and labels from the images (e.g., removing the right label from images). Augmenting the image data with additional information such as age and sex may improve the model's ability to learn age and specific changes.
 
 The dataset is imbalanced, with more pneumonia images than normal images. Increasing the dataset to include more normal X-rays can help improve the model's ability to predict normal X-rays better. We could also use cross-validation to improve the model's training.
+
+_~ End ~_ 
