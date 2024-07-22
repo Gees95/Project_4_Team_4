@@ -97,7 +97,14 @@ To better understand the thresholds, we created multiple confusion matrices at d
 
 ![Confusion Matrix 0.5 Threshold](output/confusion_matrix_0.5.png)
 
+As the threshold increases, the false negative rate for the model increases. This means more X-rays are predicted to be normal when pneumonia is present. We would like to keep this number small. The trade-off for reducing the number of false negatives is a rise in the false positives, which means there would be more normal X-rays predicted as pneumonia. This increased flagging of false positives will increase the workload to clinicians and reduce clinicians' trust in the model.
+
+# Web Test
+We tested the model on two pediatric images obtained from Radiopedia.org, one with [pneumonia](https://radiopaedia.org/cases/right-middle-lobe-pneumonia-child?lang=gb) and the other a [normal](https://radiopaedia.org/cases/normal-chest-child) Xray.
+
+The results are shown below
+
+### Normal Xray
+![Normal Xray Prediction]
 
 
-
-  
