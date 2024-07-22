@@ -70,7 +70,7 @@ As seen in the dataframe, our best-performing model had an 87.7% accuracy. We re
 ### ROC
 ![ROC Curve](output/roc_curve.png)
 
-The above figure shows the ROC curve for the model. Eyeballing the graph the Top Left Corner of the curve falls around 0.8 True predictive rate (TPR). We calculated this Top Left Corner TPR and the threcshold for the sigmoid image classification using numpy. The results for this are below:
+The above figure shows the ROC curve for the model. Eyeballing the graph, the Top Left Corner of the curve falls around 0.8 True predictive rate (TPR). We calculated this Top Left Corner TPR and the threshold for the sigmoid image classification using numpy. The results for this are below, showing the threshold to be 0.6
 ```
 Optimal Threshold (Top-Left Corner)
 --------------------------------------------------
@@ -79,6 +79,17 @@ TPR at Optimal Threshold: 0.7974358974358975
 FPR at Optimal Threshold: 0.14957264957264957
 ```
 
+However, in a clinical setting, we do not want to miss any pneumonias and prefer a higher TPR (also known as Sensitivity). We calculated the threshold for 95% sensitivity (TPR). The results are below:
+```
+Threshold for 95.0% Sensitivity
+--------------------------------------------------
+Threshold for TPR 0.95: 0.4181900918483734
+Actual TPR at this threshold: 0.9512820512820512
+FPR at this threshold: 0.49145299145299143
+```
+
+### Confusion Matrix
+To better understand the thresholds, we created multiple confusion matrices at different thresholds [0.3, 0.4, 0.5, 0.6, 0.7], which can be found in the [output folder](output) 
 
 
 
