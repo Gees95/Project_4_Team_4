@@ -61,7 +61,24 @@ We manipulated 7 parameters to find the optimal model, which gave us 165 iterati
 
 ![Display of Dataframe of all models](output/AllModelsResultsDataframe.png)
 
-One issue we encountered was that we were unable to reproduce the exact results every time we ran the code despite sedding the seed to 42. We suspected there may be additional areas in the code, such as data augmentation or pre-processing, where the seed may need to have been set. We accept this as a limitation of our work. To see this variation, additional results.csv files have been saved in the [misc folder](output/misc) for viewing. 
+One issue we encountered was that we could not reproduce the exact results every time we ran the code despite sedding the seed to 42. We suspected there may be additional areas in the code, such as data augmentation or pre-processing, where the seed may need to have been set. We accept this as a limitation of our work. To see this variation, additional results.csv files have been saved in the [misc folder](output/misc) for viewing. 
+
+# Results
+
+As seen in the dataframe, our best-performing model had an 87.7% accuracy. We replicated this model using the parameters from the dataframe and saved the model as [xray_pneumonia_model.h5](xray_pneumonia_model.h5). We further evaluated this model using ROC and a confusion matrix to set the decision-making threshold for the classifier.
+
+### ROC
+![ROC Curve](output/roc_curve.png)
+
+The above figure shows the ROC curve for the model. Eyeballing the graph the Top Left Corner of the curve falls around 0.8 True predictive rate (TPR). We calculated this Top Left Corner TPR and the threcshold for the sigmoid image classification using numpy. The results for this are below:
+```
+Optimal Threshold (Top-Left Corner)
+--------------------------------------------------
+Optimal Threshold: 0.6094634532928467
+TPR at Optimal Threshold: 0.7974358974358975
+FPR at Optimal Threshold: 0.14957264957264957
+```
+
 
 
 
