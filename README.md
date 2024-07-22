@@ -2,11 +2,12 @@
 
 # Overview & possible clinical applications
 
-This project builds a Supervised ML Image Classifier to detect pneumonia in paediatric X-ray images. In a hospital setting, the model can help highlight X-rays with pneumonia, which can be incorporated into clinical workflows to reduce human errors of missing abnormalities and highlight abnormal X-rays quickly to clinicians even before formal reports have been completed. In an outpatient setting, the ML tool can be used to find abnormal X-rays and push them up the priority for earlier reporting from the radiology team.
+This project builds a Supervised ML Image Classifier to detect pneumonia in paediatric X-ray images. In a hospital setting, the model can help highlight X-rays with pneumonia, which can be incorporated into clinical workflows to reduce human errors of missing abnormalities and highlight abnormal X-rays quickly to clinicians even before formal reports have been completed. In an outpatient setting, the ML tool can be used to find abnormal X-rays and push them up the priority for earlier reporting from the radiology team. The annotated code for the model and evaluation can be found in the Jupyter Notebook called [ml_algo.ipynb](ml_algo.ipynb)
 
 # Dataset
 
 We used a [Kaggle dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data), which had 5,863 X-ray images, to train and test our model. The image below shows the breakdown of the images by group (train, test, validation) and label (normal, pneumonia). As seen, there is an imbalance in the dataset. There are disproportionately more pneumonia images than normal.
+`Note:` The dataset from Kaggle is zipped. Both the zipped and unzipped data have been excluded from GitHub for space reasons using `.gitignore`
 
 ![Breakdown of dataset](output/dataset breakdown.png)
 
