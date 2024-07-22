@@ -30,3 +30,37 @@ def create_model(img_height, img_width, filter, seed_value, color_channels=1, dr
     ])
     return model
 ```
+
+We changed a combination of variables to see which produced the model with the best accuracy. The variable (Hyperparameters) changed both aspects of data processing and the model.
+
+### Data Processing Variables
+- **Image Size**
+  The original images were ~1000 x 800 pixels, and we scaled them to either 300 x 300 or 150 x 150 pixels.
+
+- **Colour Mode**
+  The images were converted to 'rgb' (3 Channel) or 'grayscale' (1 channel)
+
+- **Batch Size**
+  The dataset was batched in either 16, 32 or 64 images at a time to train the model.
+
+- **Augmentation**
+  We used a data augmentation layer for the images to reduce overfitting and increase the dataset. The layer flipped and rotated images.
+
+### Model Variables
+
+- **Epochs**
+  After trialling the model, we established no marked gain in accuracy (no reduction in loss) after about 5 epochs. Hence, we varied training from 3 and 5 epochs.
+
+- **Filter Size**
+  We applied a filter size to the first CNN Layer of the model, which we changed to either 3 x 3 or 7 x 7 pixels.
+
+- **Drop Out**
+  We applied a dropout layer to the model, and we varied this between 20% and 50%.
+
+We manipulated 7 parameters to find the optimal model, which gave us 165 iterations or models. Each model's evaluation metric was saved together with the parameters to a Pandas Dataframe. The dataframe was saved as a CSV file called  
+
+
+
+
+
+  
