@@ -52,12 +52,16 @@ We changed a combination of variables to see which produced the model with the b
   After trialling the model, we established no marked gain in accuracy (no reduction in loss) after about 5 epochs. Hence, we varied training from 3 and 5 epochs.
 
 - **Filter Size**
-  We applied a filter size to the first CNN Layer of the model, which we changed to either 3 x 3 or 7 x 7 pixels.
+  We applied a filter size to the first CNN Layer of the model, which we changed to 3 x 3 or 7 x 7 pixels.
 
 - **Drop Out**
   We applied a dropout layer to the model, and we varied this between 20% and 50%.
 
-We manipulated 7 parameters to find the optimal model, which gave us 165 iterations or models. Each model's evaluation metric was saved together with the parameters to a Pandas Dataframe. The dataframe was saved as a CSV file called  
+We manipulated 7 parameters to find the optimal model, which gave us 165 iterations or models. Each model's evaluation metric was saved with the parameters to a Pandas Dataframe. The dataframe was saved as a CSV file called [results.csv](output/results.csv). Below is a snapshot of the dataframe showing the best and worst models.
+
+![Display of Dataframe of all models](output/AllModelsResultsDataframe.png)
+
+One issue we encountered was that we were unable to reproduce the exact results every time we ran the code despite sedding the seed to 42. We suspected there may be additional areas in the code, such as data augmentation or pre-processing, where the seed may need to have been set. We accept this as a limitation of our work. To see this variation, additional results.csv files have been saved in the [misc folder](output/misc) for viewing. 
 
 
 
