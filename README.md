@@ -9,7 +9,7 @@ This project builds a Supervised ML Image Classifier to detect pneumonia in paed
 We used a [Kaggle dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data), which had 5,863 X-ray images, to train and test our model. The image below shows the breakdown of the images by group (train, test, validation) and label (normal, pneumonia). As seen, there is an imbalance in the dataset. There are disproportionately more pneumonia images than normal.
 `Note:` The dataset from Kaggle is zipped. Both the zipped and unzipped data have been excluded from GitHub for space reasons using `.gitignore`
 
-![Breakdown of dataset](output/dataset breakdown.png)
+![Breakdown of dataset](output/dataset_breakdown.png)
 
 # Model & data processing
 We built a Convoluted Neural Network(CNN) with 3 CNN layers and 2 Dense Layers.
