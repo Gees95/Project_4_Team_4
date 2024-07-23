@@ -1,8 +1,16 @@
 # Project_4_Team_4
 
+# Team Members
+- Murali Veerabahu
+- Abdifatah Daoud
+- Zainab Akinwale
+- Priti Patel
+
+
+
 # Overview & possible clinical applications
 
-This project builds a Supervised ML Image Classifier to detect pneumonia in paediatric X-ray images. In a hospital setting, the model can help highlight X-rays with pneumonia, which can be incorporated into clinical workflows to reduce human errors of missing abnormalities and highlight abnormal X-rays quickly to clinicians even before formal reports have been completed. In an outpatient setting, the ML tool can be used to find abnormal X-rays and push them up the priority for earlier reporting from the radiology team. The annotated code for the model and evaluation can be found in the Jupyter Notebook called [ml_algo.ipynb](ml_algo.ipynb)
+This project builds a Supervised ML Image Classifier to detect pneumonia in paediatric X-ray images. In a hospital setting, the model can help highlight X-rays with pneumonia, which can be incorporated into clinical workflows to reduce human errors of missing abnormalities and highlight abnormal X-rays quickly to clinicians even before formal reports have been completed. In an outpatient setting, the ML tool can be used to find abnormal X-rays and push them up the priority for earlier reporting from the radiology team. The annotated code for the model and evaluation can be found in the Jupyter Notebook called [ml_algo.ipynb](ml_algo.ipynb). The presentation slides for the project can be found in [Google Slides](https://docs.google.com/presentation/d/1WLr92pPxzSDVZye8YKcn5Rp5DeFqCcWM_zsA8WZKYOM/edit?usp=sharing).
 
 # Dataset
 
