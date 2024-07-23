@@ -1,6 +1,7 @@
 # Project_4_Team_4
 
-# Title: Pneumonia Detection in Children Xrays ## A Supervised ML Chest X-ray Image Classifier Model
+# Title: Pneumonia Detection in Children Xrays - A Supervised ML Chest X-ray Image Classifier Model
+
 
 
 # Team Members
